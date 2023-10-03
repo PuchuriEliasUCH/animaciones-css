@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.transicion {
+    margin: 1rem;
+    background-color: rgb(62, 136, 48);
+    width: 100px;
+    height: 100px;
+
+    transition: border-radius 1s, background-color .5s, transform .5s;
+}
+
+.transicion:hover {
+    background-color: rgb(107, 118, 218);
+    border-radius: 100%;
+}
+
+.transicion:active{
+    background-color: rgb(209, 124, 195);
+    border-radius:90px 20px 100px 50px;
+    transform: rotateY(180deg);
+}
+
+.animacion{
+    margin: 1rem;
+    background-color: rgb(107, 92, 194);
+    width: 100px;
+    height: 100px;
+    animation: rotacion infinite 1s;
+}
+
+@keyframes rotacion {
+    0%{
+        width: 20px;
+        transform: rotateY(180deg);
+    }
+
+    50%{
+        width: 80px;
+    }
+
+    100%{
+        width: 20px;
+        transform: rotateY(360deg);
+    }
+}
+
+#animacion{
+    position: absolute;
+}
+
+.moverse:hover{
+    position: relative;
+    left: 100px;
+}
+
+.crecer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 90vh;
+}
